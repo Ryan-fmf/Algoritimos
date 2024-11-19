@@ -1,8 +1,6 @@
 programa {
-  
-  inteiro c
 
-  funcao inteiro soma(inteiro x[][], inteiro y){
+  funcao soma(inteiro x[][], inteiro y){
   
     inteiro somaN[3]
     para(inteiro c = 0; c < 5; c++){
@@ -11,7 +9,6 @@ programa {
       }
       escreva(somaN[c])
     }
-    retorne somaN[y]
   }
 
   funcao inicio() {
@@ -35,8 +32,6 @@ programa {
       }
   }
 
-  para(inteiro i = 0; i < 3; i++){
-    escreva("A soma total da produção da maquina numero ", i+1, "é: ", soma(producao, i))
-  }
+    soma(producao)
 }
 }
